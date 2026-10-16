@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200" role="img" aria-labelledby="t">
+  <title id="t">7 public repositories, 0 stars, 2 followers, on GitHub since 2021</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1527"/>
+      <stop offset="1" stop-color="#070d1a"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#3d7bff"/>
+      <stop offset="1" stop-color="#2ee6d6"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="400" height="200" rx="12"/></clipPath>
+  </defs>
+  <style>
+    .s { font-family: 'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Inter,Roboto,Arial,sans-serif; }
+    .m { font-family: 'JetBrains Mono','Cascadia Code','SF Mono',Menlo,Consolas,'Liberation Mono',monospace; }
+    .rise { animation: rise .9s cubic-bezier(.22,1,.36,1) both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(6px); } }
+    .dot { animation: beat 3s ease-in-out infinite; }
+    @keyframes beat { 0%, 100% { opacity: .4; } 50% { opacity: 1; } }
+    
+    @media (prefers-reduced-motion: reduce) { .rise, .grow, .dot { animation: none; } }
+  </style>
+  <g clip-path="url(#clip)">
+    <rect width="400" height="200" fill="url(#bg)"/>
+    <circle cx="27" cy="29" r="3.5" fill="#2ee6d6" class="dot"/>
+    <text x="38" y="33" class="m" font-size="11" letter-spacing=".16em" fill="#8fa6c8">PUBLIC PROFILE</text>
+    <text x="22" y="80" class="s rise" style="animation-delay:0.05s" font-size="30" font-weight="700" letter-spacing="-.4" fill="#eef4ff">7</text>
+    <text x="22" y="100" class="m rise" style="animation-delay:0.10s" font-size="11" letter-spacing=".06em" fill="#8fa6c8">public repositories</text>
+    <text x="212" y="80" class="s rise" style="animation-delay:0.13s" font-size="30" font-weight="700" letter-spacing="-.4" fill="#eef4ff">0</text>
+    <text x="212" y="100" class="m rise" style="animation-delay:0.18s" font-size="11" letter-spacing=".06em" fill="#8fa6c8">stars earned</text>
+    <text x="22" y="140" class="s rise" style="animation-delay:0.21s" font-size="30" font-weight="700" letter-spacing="-.4" fill="#eef4ff">2</text>
+    <text x="22" y="160" class="m rise" style="animation-delay:0.26s" font-size="11" letter-spacing=".06em" fill="#8fa6c8">followers</text>
+    <text x="212" y="140" class="s rise" style="animation-delay:0.29s" font-size="30" font-weight="700" letter-spacing="-.4" fill="#eef4ff">2021</text>
+    <text x="212" y="160" class="m rise" style="animation-delay:0.34s" font-size="11" letter-spacing=".06em" fill="#8fa6c8">on GitHub since</text>
+    <text x="22" y="186" class="m" font-size="10" letter-spacing=".04em" fill="#6b83a8">updated 2026-10-16 · GitHub GraphQL API</text>
+  </g>
+  <rect x=".5" y=".5" width="399" height="199" rx="11.5" fill="none" stroke="#1a2840"/>
+</svg>
