@@ -1,0 +1,7 @@
+# Local output of scripts/generate-stats.mjs — the workflow publishes the real files to the output branch
+dist/
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db

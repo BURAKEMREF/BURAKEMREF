@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200" role="img" aria-labelledby="t">
+  <title id="t">Usersdot — User management app: a NestJS REST API with Knex, MySQL and bcrypt, plus a React and Ant Design client.</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1527"/>
+      <stop offset="1" stop-color="#070d1a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="1" cy="0" r=".9">
+      <stop offset="0" stop-color="#3d7bff" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#3d7bff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip"><rect width="400" height="200" rx="12"/></clipPath>
+  </defs>
+  <style>
+    .s { font-family: 'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Inter,Roboto,Arial,sans-serif; }
+    .m { font-family: 'JetBrains Mono','Cascadia Code','SF Mono',Menlo,Consolas,'Liberation Mono',monospace; }
+    .dot { animation: beat 3s ease-in-out infinite; }
+    @keyframes beat { 0%, 100% { opacity: .4; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
+  </style>
+  <g clip-path="url(#clip)">
+    <rect width="400" height="200" fill="url(#bg)"/>
+    <rect width="400" height="200" fill="url(#glow)"/>
+    <circle cx="27" cy="30" r="3.5" fill="#2ee6d6" class="dot"/>
+    <text x="38" y="34" class="m" font-size="11" letter-spacing=".16em" fill="#8fa6c8">PUBLIC REPOSITORY</text>
+    <text x="378" y="34" class="m" font-size="12" text-anchor="end" fill="#2ee6d6">↗</text>
+    <text x="22" y="72" class="s" font-size="26" font-weight="700" letter-spacing="-.4" fill="#eef4ff">Usersdot</text>
+    <text x="22" y="100" class="s" font-size="14.5" fill="#8fa6c8">User management app: a NestJS REST API with</text>
+    <text x="22" y="121" class="s" font-size="14.5" fill="#8fa6c8">Knex, MySQL and bcrypt, plus a React and</text>
+    <text x="22" y="142" class="s" font-size="14.5" fill="#8fa6c8">Ant Design client.</text>
+    <rect x="22" y="156" width="90" height="22" rx="11" fill="none" stroke="#1a2840"/>
+    <text x="67" y="171" class="m" font-size="11" text-anchor="middle" fill="#d5e2f8">TypeScript</text>
+    <rect x="120" y="156" width="61" height="22" rx="11" fill="none" stroke="#1a2840"/>
+    <text x="150.5" y="171" class="m" font-size="11" text-anchor="middle" fill="#d5e2f8">NestJS</text>
+    <rect x="189" y="156" width="54" height="22" rx="11" fill="none" stroke="#1a2840"/>
+    <text x="216" y="171" class="m" font-size="11" text-anchor="middle" fill="#d5e2f8">React</text>
+    <rect x="251" y="156" width="54" height="22" rx="11" fill="none" stroke="#1a2840"/>
+    <text x="278" y="171" class="m" font-size="11" text-anchor="middle" fill="#d5e2f8">MySQL</text>
+  </g>
+  <rect x=".5" y=".5" width="399" height="199" rx="11.5" fill="none" stroke="#1a2840"/>
+</svg>

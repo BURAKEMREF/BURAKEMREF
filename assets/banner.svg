@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" role="img" aria-labelledby="title desc">
+  <title id="title">Burak Emre İleri — Software Engineer | .NET &amp; Full-Stack Developer</title>
+  <desc id="desc">Animated banner: name and role beside a small service topology (client, API, services, data) with travelling request pulses.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#03060d"/>
+      <stop offset="1" stop-color="#0a1630"/>
+    </linearGradient>
+    <radialGradient id="glowTurq" cx="0.86" cy="0.08" r="0.62">
+      <stop offset="0" stop-color="#2ee6d6" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#2ee6d6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBlue" cx="0.08" cy="1.05" r="0.7">
+      <stop offset="0" stop-color="#3d7bff" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#3d7bff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#8fb4ff" stroke-opacity=".055"/>
+    </pattern>
+    <linearGradient id="scan" x1="0" x2="1">
+      <stop offset="0" stop-color="#2ee6d6" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#2ee6d6" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#2ee6d6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" x2="1">
+      <stop offset="0" stop-color="#2ee6d6"/>
+      <stop offset=".6" stop-color="#3d7bff"/>
+      <stop offset="1" stop-color="#3d7bff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1000" height="360" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .s { font-family: 'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',Inter,Roboto,Arial,sans-serif; }
+    .m { font-family: 'JetBrains Mono','Cascadia Code','SF Mono',Menlo,Consolas,'Liberation Mono',monospace; }
+    .col { font-size: 10px; letter-spacing: .16em; fill: #6b83a8; }
+    .edge { fill: none; stroke: #2ee6d6; stroke-opacity: .26; stroke-width: 1.2; }
+    .hud { fill: none; stroke: #2ee6d6; stroke-opacity: .6; stroke-width: 1.4; }
+    .rise { animation: rise 1s cubic-bezier(.22,1,.36,1) both; }
+    .d1 { animation-delay: .05s; } .d2 { animation-delay: .16s; } .d3 { animation-delay: .27s; }
+    .d4 { animation-delay: .38s; } .d5 { animation-delay: .6s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+    .rule { transform-origin: 64px 0; animation: grow 1.4s .55s cubic-bezier(.22,1,.36,1) both; }
+    @keyframes grow { from { transform: scaleX(0); } }
+    .net { animation: fade 1.6s .45s ease both; }
+    @keyframes fade { from { opacity: 0; } }
+    .beat { animation: beat 3.6s ease-in-out infinite; }
+    @keyframes beat { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+    .sweep { animation: sweep 9s cubic-bezier(.45,0,.55,1) 1.4s infinite; transform: translateX(-220px); }
+    @keyframes sweep { 0% { transform: translateX(-220px); } 55%, 100% { transform: translateX(1220px); } }
+    @media (prefers-reduced-motion: reduce) { .rise, .net, .rule, .beat { animation: none; } .sweep, .pulse { display: none; } }
+    /* Embedded as an image, media queries see the image's own rendered size. On a phone-width README the
+       hero text is scaled up and the decorative detail that would be too small to read is dropped. */
+    @media (max-width: 520px) {
+      .net, .sweep, .kicker, .tagline { display: none; }
+      .hero { transform: translate(-30px, -131px) scale(1.6); }
+    }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="360" fill="url(#bg)"/>
+    <rect width="1000" height="360" fill="url(#grid)"/>
+    <rect width="1000" height="360" fill="url(#glowTurq)"/>
+    <rect width="1000" height="360" fill="url(#glowBlue)"/>
+    <g class="net">
+      <text x="716" y="58" class="m col" text-anchor="middle">CLIENT</text>
+      <text x="796" y="58" class="m col" text-anchor="middle">API</text>
+      <text x="876" y="58" class="m col" text-anchor="middle">SERVICES</text>
+      <text x="950" y="58" class="m col" text-anchor="middle">DATA</text>
+      <path id="e0" class="edge" d="M716 112 C756 112 756 180 796 180"/>
+      <path id="e1" class="edge" d="M716 248 C756 248 756 180 796 180"/>
+      <path id="e2" class="edge" d="M796 180 C836 180 836 106 876 106"/>
+      <path id="e3" class="edge" d="M796 180 C836 180 836 180 876 180"/>
+      <path id="e4" class="edge" d="M796 180 C836 180 836 254 876 254"/>
+      <path id="e5" class="edge" d="M876 106 C913 106 913 140 950 140"/>
+      <path id="e6" class="edge" d="M876 180 C913 180 913 140 950 140"/>
+      <path id="e7" class="edge" d="M876 180 C913 180 913 220 950 220"/>
+      <path id="e8" class="edge" d="M876 254 C913 254 913 220 950 220"/>
+      <circle class="pulse" r="2.4" fill="#7ff5ec" opacity="0">
+        <animateMotion dur="2.40s" begin="0.90s" repeatCount="indefinite"><mpath href="#e0"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.40s" begin="0.90s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="pulse" r="2.4" fill="#7ff5ec" opacity="0">
+        <animateMotion dur="2.75s" begin="1.31s" repeatCount="indefinite"><mpath href="#e1"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.75s" begin="1.31s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="pulse" r="2.4" fill="#7ff5ec" opacity="0">
+        <animateMotion dur="3.10s" begin="1.72s" repeatCount="indefinite"><mpath href="#e2"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.10s" begin="1.72s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="pulse" r="2.4" fill="#7ff5ec" opacity="0">
+        <animateMotion dur="3.45s" begin="2.13s" repeatCount="indefinite"><mpath href="#e3"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.45s" begin="2.13s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="pulse" r="2.4" fill="#7ff5ec" opacity="0">
+        <animateMotion dur="2.40s" begin="2.54s" repeatCount="indefinite"><mpath href="#e4"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.40s" begin="2.54s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="pulse" r="2.4" fill="#7ff5ec" opacity="0">
+        <animateMotion dur="2.75s" begin="2.95s" repeatCount="indefinite"><mpath href="#e5"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.75s" begin="2.95s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="pulse" r="2.4" fill="#7ff5ec" opacity="0">
+        <animateMotion dur="3.10s" begin="3.36s" repeatCount="indefinite"><mpath href="#e6"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.10s" begin="3.36s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="pulse" r="2.4" fill="#7ff5ec" opacity="0">
+        <animateMotion dur="3.45s" begin="3.77s" repeatCount="indefinite"><mpath href="#e7"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="3.45s" begin="3.77s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="pulse" r="2.4" fill="#7ff5ec" opacity="0">
+        <animateMotion dur="2.40s" begin="4.18s" repeatCount="indefinite"><mpath href="#e8"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.40s" begin="4.18s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="707" y="103" width="18" height="18" rx="4" fill="#08142a" stroke="#5f7fb3" stroke-width="1.2"/>
+      <rect x="712" y="108" width="8" height="8" rx="1.5" fill="#5f7fb3" class="beat" style="animation-delay:0.00s"/>
+      <rect x="707" y="239" width="18" height="18" rx="4" fill="#08142a" stroke="#5f7fb3" stroke-width="1.2"/>
+      <rect x="712" y="244" width="8" height="8" rx="1.5" fill="#5f7fb3" class="beat" style="animation-delay:0.37s"/>
+      <circle cx="796" cy="180" r="24" fill="#3d7bff" opacity=".16" class="beat"/>
+      <rect x="784" y="168" width="24" height="24" rx="5" fill="#0b1b3a" stroke="#3d7bff" stroke-width="1.4"/>
+      <rect x="792" y="176" width="8" height="8" rx="1.5" fill="#2ee6d6" class="beat" style="animation-delay:0.74s"/>
+      <rect x="867" y="97" width="18" height="18" rx="4" fill="#071a24" stroke="#2ee6d6" stroke-width="1.2"/>
+      <circle cx="876" cy="106" r="3" fill="#2ee6d6" class="beat" style="animation-delay:1.11s"/>
+      <rect x="867" y="171" width="18" height="18" rx="4" fill="#071a24" stroke="#2ee6d6" stroke-width="1.2"/>
+      <circle cx="876" cy="180" r="3" fill="#2ee6d6" class="beat" style="animation-delay:1.48s"/>
+      <rect x="867" y="245" width="18" height="18" rx="4" fill="#071a24" stroke="#2ee6d6" stroke-width="1.2"/>
+      <circle cx="876" cy="254" r="3" fill="#2ee6d6" class="beat" style="animation-delay:1.85s"/>
+      <path d="M941 134 v12 a9 3.4 0 0 0 18 0 v-12" fill="#071a24" stroke="#2ee6d6" stroke-width="1.3"/>
+      <ellipse cx="950" cy="134" rx="9" ry="3.4" fill="#0a2430" stroke="#2ee6d6" stroke-width="1.3"/>
+      <path d="M941 140 a9 3.4 0 0 0 18 0" fill="none" stroke="#2ee6d6" stroke-width="1" opacity=".55"/>
+      <path d="M941 214 v12 a9 3.4 0 0 0 18 0 v-12" fill="#071a24" stroke="#2ee6d6" stroke-width="1.3"/>
+      <ellipse cx="950" cy="214" rx="9" ry="3.4" fill="#0a2430" stroke="#2ee6d6" stroke-width="1.3"/>
+      <path d="M941 220 a9 3.4 0 0 0 18 0" fill="none" stroke="#2ee6d6" stroke-width="1" opacity=".55"/>
+    </g>
+    <rect class="sweep" x="0" y="0" width="200" height="360" fill="url(#scan)"/>
+    <g class="hero">
+      <text x="64" y="92" class="m rise d1 kicker" font-size="13" letter-spacing=".22em" fill="#2ee6d6">GITHUB.COM/BURAKEMREF</text>
+      <text x="62" y="160" class="s rise d2" font-size="60" font-weight="700" letter-spacing="-1.2" fill="#eef4ff">Burak Emre İleri</text>
+      <text x="64" y="212" class="s rise d3" font-size="28" font-weight="600" fill="#d5e2f8">Software Engineer</text>
+      <text x="64" y="250" class="s rise d4" font-size="28" font-weight="500" fill="#2ee6d6">.NET &amp; Full-Stack Developer</text>
+      <rect class="rule" x="64" y="280" width="250" height="2" rx="1" fill="url(#rule)"/>
+      <text x="64" y="314" class="m rise d5 tagline" font-size="13" letter-spacing=".06em" fill="#8fa6c8">Clean architecture · Typed front-ends · Real-time 3D on the web</text>
+    </g>
+    <g class="hud">
+      <path d="M16 34 V16 H34" />
+      <path d="M984 34 V16 H966"/>
+      <path d="M16 326 V344 H34"/>
+      <path d="M984 326 V344 H966"/>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="999" height="359" rx="17.5" fill="none" stroke="#1a2840"/>
+</svg>

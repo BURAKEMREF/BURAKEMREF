@@ -1,0 +1,58 @@
+name: Profile assets
+
+# Redraws the contribution snake and the statistics cards and publishes them to the `output` branch,
+# which README.md reads from. Runs every day, on demand, and when the generators change.
+on:
+  schedule:
+    - cron: "23 4 * * *" # daily, 04:23 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/profile-assets.yml
+      - scripts/generate-stats.mjs
+
+# Nothing by default; the job below asks only for what it needs.
+permissions: {}
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write # commit the generated SVGs to the output branch
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Draw the contribution snake
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark&color_snake=#2ee6d6&color_dots=#151b23,#0c3550,#0f5a87,#1a7fc2,#3d9bff
+            dist/snake-light.svg?palette=github-light&color_snake=#1f6ae0&color_dots=#ebedf0,#b8e6ec,#72cdd8,#25aabb,#0a7f90
+
+      - name: Build the statistics cards
+        run: node scripts/generate-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROFILE_LOGIN: ${{ github.repository_owner }}
+          OUT_DIR: dist
+
+      - name: Publish to the output branch
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true # incremental commits, never a force push
+          allow_empty_commit: false
+          commit_message: "chore: update profile assets"
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
