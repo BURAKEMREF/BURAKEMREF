@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200" role="img" aria-labelledby="t">
-  <title id="t">141 contributions on GitHub in the last 12 months</title>
+  <title id="t">160 contributions on GitHub in the last 12 months</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1527"/>
@@ -26,7 +26,7 @@
     <rect width="400" height="200" fill="url(#bg)"/>
     <circle cx="27" cy="29" r="3.5" fill="#2ee6d6" class="dot"/>
     <text x="38" y="33" class="m" font-size="11" letter-spacing=".16em" fill="#8fa6c8">ACTIVITY · LAST 12 MONTHS</text>
-    <text x="22" y="80" class="s rise" font-size="38" font-weight="700" letter-spacing="-.5" fill="#eef4ff">141</text>
+    <text x="22" y="80" class="s rise" font-size="38" font-weight="700" letter-spacing="-.5" fill="#eef4ff">160</text>
     <text x="22" y="101" class="m rise" style="animation-delay:.1s" font-size="11.5" letter-spacing=".04em" fill="#8fa6c8">contributions on GitHub</text>
     <rect x="22.00" y="112" width="5.15" height="34" rx="1" fill="#1a2840" opacity=".35"/>
     <rect x="28.75" y="112" width="5.15" height="34" rx="1" fill="#1a2840" opacity=".35"/><rect class="grow" style="animation-delay:0.262s" x="28.75" y="141.84" width="5.15" height="4.16" rx="1" fill="url(#bar)"/>
@@ -80,7 +80,7 @@
     <rect x="352.61" y="112" width="5.15" height="34" rx="1" fill="#1a2840" opacity=".35"/><rect class="grow" style="animation-delay:0.838s" x="352.61" y="144.00" width="5.15" height="2.00" rx="1" fill="url(#bar)"/>
     <rect x="359.36" y="112" width="5.15" height="34" rx="1" fill="#1a2840" opacity=".35"/>
     <rect x="366.11" y="112" width="5.15" height="34" rx="1" fill="#1a2840" opacity=".35"/><rect class="grow" style="animation-delay:0.862s" x="366.11" y="137.67" width="5.15" height="8.33" rx="1" fill="url(#bar)"/>
-    <rect x="372.85" y="112" width="5.15" height="34" rx="1" fill="#1a2840" opacity=".35"/><rect class="grow" style="animation-delay:0.874s" x="372.85" y="140.45" width="5.15" height="5.55" rx="1" fill="url(#bar)"/>
+    <rect x="372.85" y="112" width="5.15" height="34" rx="1" fill="#1a2840" opacity=".35"/><rect class="grow" style="animation-delay:0.874s" x="372.85" y="127.27" width="5.15" height="18.73" rx="1" fill="url(#bar)"/>
     <text x="22.0" y="172" class="m" font-size="9.5" letter-spacing=".1em" fill="#8fa6c8">COMMITS</text>
     <text x="22.0" y="190" class="s" font-size="15" font-weight="600" fill="#eef4ff">2</text>
     <text x="93.2" y="172" class="m" font-size="9.5" letter-spacing=".1em" fill="#8fa6c8">PRS</text>
@@ -90,7 +90,7 @@
     <text x="235.6" y="172" class="m" font-size="9.5" letter-spacing=".1em" fill="#8fa6c8">REVIEWS</text>
     <text x="235.6" y="190" class="s" font-size="15" font-weight="600" fill="#eef4ff">0</text>
     <text x="306.8" y="172" class="m" font-size="9.5" letter-spacing=".1em" fill="#8fa6c8">PRIVATE</text>
-    <text x="306.8" y="190" class="s" font-size="15" font-weight="600" fill="#eef4ff">137</text>
+    <text x="306.8" y="190" class="s" font-size="15" font-weight="600" fill="#eef4ff">156</text>
   </g>
   <rect x=".5" y=".5" width="399" height="199" rx="11.5" fill="none" stroke="#1a2840"/>
 </svg>
